@@ -1,0 +1,14 @@
+// C++ code
+//
+//Potansiyometre ile ışığı ayarlanabilir led çalışması kodları.
+void setup()
+{
+  pinMode(10, OUTPUT);
+  pinMode(A0, INPUT);
+}
+
+void loop()
+{
+  int par=analogRead(A0)/4;
+  analogWrite(10,par);
+}
